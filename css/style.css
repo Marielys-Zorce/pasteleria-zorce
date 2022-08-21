@@ -31,6 +31,8 @@
     align-items: center;
     grid-area: header;
     background-color: white;
+    /* gradientes */
+    background-image: linear-gradient(rgb(254, 75, 152) 10%,darkgray 10%,white 80%);
     position: sticky;
     top: 0;
     border-bottom: 2px rgb(254, 75, 152) solid;
@@ -41,7 +43,10 @@
 .logoHeader {
     width: 70px;
     height: 75px;
-  }
+}
+.logoHeader:hover {
+    transform: rotate(340deg);
+}
 
 /* Estilo Barra de Navegación */
 .nav ul {
@@ -59,9 +64,15 @@
     text-decoration: none;
 }
 
+/* transformaciones */
+a:hover {
+    font-weight: normal;
+}
+
 li {
 
     margin-right: 1.5rem;
+    
 }
 
 /* Estilo Main */
@@ -90,6 +101,15 @@ li {
     text-align: center;
     font-style: italic;
     font-weight: normal;
+    /* gradientes */
+    background-image: radial-gradient(white 65%,darkgray);
+    /* transformaciones */
+   
+    animation-name: tituloCambiante;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
 }
 
 /* Estilo Imagenes */
@@ -99,6 +119,7 @@ li {
     flex-direction: row;
     justify-content:center;
     margin: 5px;
+   
 
 }
 
@@ -108,8 +129,16 @@ li {
     border-radius: 8px;
     margin: 5px;
     border: 2px rgb(254, 75, 152) solid;
+    
+   
+    
+   
 }
-
+/* tranformaciones animaciones */
+.imgDestacadas img:hover{
+    transform:translate(5px, 5px);
+    transition: .3s;
+}
 /* Estilo Primera Sección */
 
 .primeraSeccion {
@@ -195,7 +224,9 @@ li {
 /* Estilo footer */
 .footer {
     grid-area: footer;
-    background-color: darkgray;
+    /* background-color: darkgray; */
+    /* gradientes */
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
     border-top: 2px rgb(254, 75, 152) solid;
     display: flex;
     flex-direction: column;
@@ -222,7 +253,7 @@ li {
 /* Estilo main */
 .imgMain{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     flex-wrap: wrap;
     margin: 20px 40px
 }
@@ -303,9 +334,10 @@ li {
 .input {
     border: 0.5px darkgray solid;
     width: 300px;
-    height: 15px;
+    height: 30px;
     padding: 8px;
 }
+
 
 .textarea {
     border-color: darkgray;
@@ -338,6 +370,33 @@ li {
     border-radius: 5px;
     margin: 10px;
     border: none;
+}
+
+/* keyframes */
+@keyframes tituloCambiante {
+    0%{
+        color:darkgray;
+        
+    }
+    25%{
+        color:deeppink;
+
+        
+    }
+    50%{
+        color:darkgray;
+        
+    }
+    75%{
+        color:deeppink;
+        
+
+    }
+
+    100%{
+        color:dimgrey;
+    
+    }
 }
 
 /* Media Querys */
