@@ -21,90 +21,78 @@
 }
 
 /* Estilo Index */
-
 /* Estilo Header */
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+.header{
     grid-area: header;
-    background-color: white;
-    /* gradientes */
-    background-image: linear-gradient(rgb(254, 75, 152) 10%,darkgray 10%,white 80%);
     position: sticky;
     top: 0;
-    border-bottom: 2px rgb(254, 75, 152) solid;
-    z-index: 100;
+    border-bottom: 2px  rgb(237, 174, 201) solid;
+    z-index: 100; 
+    height: 110px;
+} 
+
+.gradientes{
+
+    /* gradientes */
+     background-image: linear-gradient(white 85%, rgb(242, 196, 216));
+}   
+
+.logo{
+    width: 50px;
+    height: 60px;
 }
 
-/* Estilo logo Header */
-.logoHeader {
-    width: 70px;
-    height: 75px;
-}
-.logoHeader:hover {
-    transform: rotate(340deg);
+.colorNav{
+    background-color:white;
 }
 
-/* Estilo Barra de Navegación */
-.nav ul {
-    margin: 15px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.letraGrande a{
+    font-size: 20px;
+  
+}
+
+li{
+    margin-left: 1.5rem;
+}
+
+.colorButton:hover {
+    background-color: rgb(237, 174, 201);
+
+}
+.colorButton {
+    background-color:  rgb(226, 212, 218);
+    color: dimgray;
 
 }
 
-.negrita a {
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-}
-
-/* transformaciones */
-a:hover {
-    font-weight: normal;
-}
-
-li {
-
-    margin-right: 1.5rem;
-    
-}
 
 /* Estilo Main */
 
 /* Estilo Banner */
 .banner {
-
     grid-area: banner;
-   
-
 }
-.banner img {
 
- 
+.banner img {
     width: 100%;
     height: 400px;
-
 }
 
 /* Estilo título */
 .titulo {
     margin-bottom: 5px;
-    padding: 15px;
+    height: 100px;
+    padding: 25px;
     color: darkgray;
-    border-bottom: 2px rgb(254, 75, 152) solid;
+    border-bottom: 2px  rgb(237, 174, 201) solid;
     text-align: center;
     font-style: italic;
     font-weight: normal;
+
     /* gradientes */
     background-image: radial-gradient(white 65%,darkgray);
-    /* transformaciones */
    
+    /* transformaciones */
     animation-name: tituloCambiante;
     animation-duration: .8s;
     animation-iteration-count: infinite;
@@ -118,8 +106,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content:center;
-    margin: 5px;
-   
+    margin-bottom: 60px;
 
 }
 
@@ -127,18 +114,19 @@ li {
     width: 280px;
     height: 280px;
     border-radius: 8px;
-    margin: 5px;
-    border: 2px rgb(254, 75, 152) solid;
-    
-   
-    
+    margin: 15px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    border: 2px  rgb(237, 174, 201) solid;   
    
 }
+
 /* tranformaciones animaciones */
 .imgDestacadas img:hover{
     transform:translate(5px, 5px);
     transition: .3s;
 }
+
 /* Estilo Primera Sección */
 
 .primeraSeccion {
@@ -149,6 +137,7 @@ li {
     text-align: center;
     color: darkgray;
     margin: 70px;
+    
 }
 
 /* Estilo Segunda Sección */
@@ -159,13 +148,12 @@ li {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 20px 0px;
-     background-color: white;
+    background-color: white;
     line-height: 2;
     text-align: center;
     color: darkgray;
     font-weight: normal;
     font-style: italic;
-
 }
 
 .enLinea {
@@ -176,7 +164,6 @@ li {
     text-align: center;    
     color: darkgray;
     font-style: italic;
-    
 }
 
 /* Estilo Tercera Sección */
@@ -211,9 +198,9 @@ li {
 
 .wapp img {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    bottom: 70px;
     right: 40px;
     background-color: #25d366;
     border-radius: 50px;
@@ -224,28 +211,45 @@ li {
 /* Estilo footer */
 .footer {
     grid-area: footer;
-    /* background-color: darkgray; */
+    border-top: 2px  rgb(226, 212, 218) solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
     /* gradientes */
-    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
-    border-top: 2px rgb(254, 75, 152) solid;
-    display: flex;
-    flex-direction: column;
+    background-image: linear-gradient(to top,  rgb(237, 174, 201),rgb(226, 212, 218) ); 
 }
 
-.imagenes {
+.imgRedes {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    height: 30px;
 }
 
-.imagenes img {
-    width: 200px;
+.imgRedes img {
+    width: 30px;
+    margin-right: 20px; 
+}
+
+.imgPago{
+    width: 120px;
+    height: 35px;
+    top:15px
+}
+
+.posicion {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+
 }
 
 .textoChico p {
-    background-color: rgb(193, 187, 187);
     font-size: 15px;
     color: black;
+    position: relative;
+    top:60px;
 }
 
 /* Estilo Sobre Nosotros */
@@ -255,13 +259,15 @@ li {
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    margin: 20px 40px
+    margin: 20px 40px;
 }
+
 .imgMain img {
     width: 400px;
     margin: 25px;
-    position: relative;
-    top: 10px;
+    position:relative;
+    justify-content: center;
+    top: 30px;
 }
 
 .textoCentrado {
@@ -276,11 +282,12 @@ li {
 }
 
 .iframeVideo iframe {
-    width: 700px;
+    width: 600px;
     height: 300px;
-    margin: 150px;
-    position: relative;
-    left: 200px;
+    margin: 100px;
+    position:relative;
+    justify-content: center;
+    
 }
 
 
@@ -297,7 +304,7 @@ li {
     margin-bottom: 10px;
     padding: 5px;
     color: darkgray;
-    text-align: left;
+    text-align: center;
     font-style: italic;
     font-weight: normal
 }
@@ -338,7 +345,6 @@ li {
     padding: 8px;
 }
 
-
 .textarea {
     border-color: darkgray;
     width: 350px;
@@ -356,11 +362,7 @@ li {
 .content{
     display: flex;
     direction: row;
-
-    
 }
-
-
 
 .boton {
     background-color: darkgray;
@@ -379,7 +381,7 @@ li {
         
     }
     25%{
-        color:deeppink;
+        color:rgb(237, 174, 201);
 
         
     }
@@ -388,7 +390,7 @@ li {
         
     }
     75%{
-        color:deeppink;
+        color:rgb(237, 174, 201);
         
 
     }
@@ -446,14 +448,7 @@ li {
 
 @media(max-width: 748px) {
 
-    .header {
-       
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
-       
-    }
+     
     .logoHeader {
         width: 42px;
         height: 34px;
@@ -479,13 +474,14 @@ li {
 @media(max-width: 455px) {
 .imgMain img {
     width: 280px;
-    margin: 15px;
+    margin: 40px;
     position: relative;
     top: 10px;
 }
 .textoCentrado {
-    font-size: 13px;
+    font-size: 8px;
     margin-bottom: 15px;
+    
    
     
 }
@@ -500,7 +496,7 @@ li {
 
 
 
-@media(max-width: 378px) {
+ @media(max-width: 378px) {
     .negrita a {
        
         font-size: 6px;
@@ -562,4 +558,4 @@ li {
     }
 
 
-}
+} 
