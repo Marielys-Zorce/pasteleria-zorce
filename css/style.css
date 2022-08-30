@@ -200,7 +200,7 @@ li{
     position: fixed;
     width: 50px;
     height: 50px;
-    bottom: 70px;
+    bottom: 90px;
     right: 40px;
     background-color: #25d366;
     border-radius: 50px;
@@ -216,7 +216,7 @@ li{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 140px;
+    height: 175px;
     /* gradientes */
     background-image: linear-gradient(to top,  rgb(237, 174, 201),rgb(226, 212, 218) ); 
 }
@@ -224,6 +224,7 @@ li{
 .imgRedes {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     height: 30px;
 }
 
@@ -235,14 +236,8 @@ li{
 .imgPago{
     width: 120px;
     height: 35px;
-    top:15px
-}
-
-.posicion {
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-
+    position: relative;
+    top:50px
 }
 
 .textoChico p {
@@ -255,38 +250,42 @@ li{
 /* Estilo Sobre Nosotros */
 
 /* Estilo main */
-.imgMain{
+.imgTex{
     display: flex;
-    justify-content:center;
+    flex-direction: row;
+    justify-content:space-evenly;
     flex-wrap: wrap;
-    margin: 20px 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .imgMain img {
     width: 400px;
     margin: 25px;
     position:relative;
-    justify-content: center;
-    top: 30px;
+    justify-content:left;
+    top: 10px;
 }
 
 .textoCentrado {
-    padding: 10px;    
+    padding-top: 50px;
+    /* padding: 40px;     */
     width: 350px;
-    height: 150px; 
     text-align: center;
     color: darkgray;
     font-style: italic;   
     bottom: 20px;
+    top: 20px;
     line-height: 1.5;
+    font-size: 16px;
 }
 
 .iframeVideo iframe {
     width: 600px;
     height: 300px;
-    margin: 100px;
+    margin: 60px;
     position:relative;
-    justify-content: center;
+    justify-content:center;
     
 }
 
@@ -304,7 +303,7 @@ li{
     margin-bottom: 10px;
     padding: 5px;
     color: darkgray;
-    text-align: center;
+    text-align:left;
     font-style: italic;
     font-weight: normal
 }
@@ -474,12 +473,12 @@ li{
 @media(max-width: 455px) {
 .imgMain img {
     width: 280px;
-    margin: 40px;
+    /* margin: 40px; */
     position: relative;
     top: 10px;
 }
 .textoCentrado {
-    font-size: 8px;
+    font-size: 15px;
     margin-bottom: 15px;
     
    
@@ -492,9 +491,6 @@ li{
 }
 
 }
-
-
-
 
  @media(max-width: 378px) {
     .negrita a {
@@ -523,6 +519,7 @@ li{
 
 
 }
+
 @media(max-width: 349px) {
     .negrita a {
        
@@ -534,21 +531,23 @@ li{
     }
     .textoCentrado {
       
-        margin-bottom: 25px;
-        font-size: 10px;
-       
-        
+        /* margin-bottom: 25px; */
+        margin: 10px;
+        /* font-size: 10px; */
+        width: 300px; 
+        text-align: center; 
     }
   
-
-
 }
+
 @media(max-width: 320px) {
     .negrita a {
        
         font-size: 6px;
     }
-
+    .textoChico {
+        font-size: 3px;
+    }
     li {
         margin-right: 3px;
     }
